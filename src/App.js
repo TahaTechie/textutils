@@ -2,14 +2,14 @@ import React from "react";
 import Navbar from './components/Navbar';
 import Textform from './components/Textform';
 import Alert from './components/Alert';
-import About from './components/About';
+// import About from './components/About';
 import { useState } from 'react';
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route
+// } from "react-router-dom";
 
 
 
@@ -45,18 +45,18 @@ function App() {
   }
   return (
     <>
-      <Router>
+      {/* <Router> */}
         <Navbar title="Text Utils" mode={mode} changeMode={changeMode} />
         <Alert alert={alert} />
-        <Switch>
+        {/* <Switch>
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/">
+          <Route path="/"> */}
             <Textform heading="Enter Text To Analyze" mode={mode} changeMode={changeMode} showAlert={showAlert} />
-          </Route>
-        </Switch>
-      </Router>
+          {/* </Route>
+        </Switch> */}
+      {/* </Router> */}
     </>
   );
 }
