@@ -21,8 +21,8 @@ function App() {
       setmode("dark");
       let c1 = document.getElementById("colorPicker1");
       let c2 = document.getElementById("colorPicker2");
-      document.body.style.backgroundColor = "dark";
-      document.body.style.color = "white";
+      document.body.style.backgroundColor = c2.value;
+      document.body.style.color = c1.value;
       showAlert("Dark Mode Enabled", "light");
       window.alert("You can also select color for background and foreground");
     }
